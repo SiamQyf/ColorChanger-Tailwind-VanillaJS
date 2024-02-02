@@ -25,7 +25,7 @@ btnStart.addEventListener('click', function(){
     if (timer != null){
         clearInterval(timer);
     };   
-    timer = setInterval(stopwatch, 1000);
+    timer = setInterval(stopwatch, 10);
     btnStart.innerHTML = "STARTED";
     btnStop.innerHTML = "PAUSE";
     btnStart.classList.add("focus:bg-slate-400");
@@ -34,6 +34,7 @@ btnStart.addEventListener('click', function(){
  btnStop.addEventListener('click', function(){
     clearInterval(timer);
     if(displayId.innerHTML != "00:00:00"){
+        btnStop.clicked = false
         btnStart.innerHTML = "RESUME";
         btnStop.innerHTML = "PAUSED";
         btnStop.classList.add("focus:bg-slate-400");
