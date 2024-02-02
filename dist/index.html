@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>StopWatch</title>
+  </head>
+  <body
+    class="h-screen bg-gradient-to-br from-stone-400 via-cyan-900 to-blue-800"
+  >
+    <div class="containe mt-36">
+      <div
+        id="displayX"
+        class="text-white mx-auto bg-slate-800 h-11 w-44 rounded-md text-4xl text-center"
+      >
+        00:00:00
+      </div>
+
+      <div class="flex w-fit mt-4 gap-2 mx-auto">
+        <div class="mt-4 mx-auto w-fit">
+          <button id="btnStart"
+            class="rounded-full font-semibold text-sm items-center bg-slate-500/80 text-gray-300 px-4 py-1"
+          >
+            START
+          </button>
+        </div>
+        <div class="mt-4 mx-auto w-fit">
+          <button id="btnStop"
+            class="rounded-full font-semibold text-sm items-center bg-slate-500/80 text-gray-300 px-4 py-1"
+          >
+            PAUSE
+          </button>
+        </div>
+        <div class="mt-4 mx-auto w-fit">
+          <button id="btnReset"
+            class="rounded-full font-semibold text-sm items-center bg-slate-500/80 text-gray-300 px-4 py-1"
+          >
+            RESET
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
