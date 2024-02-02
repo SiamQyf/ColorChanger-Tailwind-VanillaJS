@@ -20,26 +20,27 @@ function stopwatch(){
 
 btnStart.addEventListener('click', function(){
     if (timer != null){
-        clearInterval(timer)
-    }    
-    timer = setInterval(stopwatch, 1000)
+        clearInterval(timer);
+    };   
+    timer = setInterval(stopwatch, 10);
     btnStart.innerHTML = "STARTED";
     btnStop.innerHTML = "PAUSE";
-    btnStart.classList.add("focus:bg-slate-400")
+    btnStart.classList.add("focus:bg-slate-400");
  })
 
  btnStop.addEventListener('click', function(){
-    clearInterval(timer)
+    clearInterval(timer);
     btnStart.innerHTML = "RESUME";
     btnStop.innerHTML = "PAUSED";
-    btnStop.classList.add("focus:bg-slate-400")
+    btnStop.classList.add("focus:bg-slate-400");
 })
 
 btnReset.addEventListener('click', function(){
     displayId.innerHTML = "00:00:00";
+    clearInterval(timer);
     btnStart.innerHTML = "START";
     btnStop.innerHTML = "PAUSE";
-    btnReset.classList.add("focus:bg-slate-400")
-    [secs, mins, hrs] = [0, 0, 0]
+    btnReset.classList.add("focus:bg-slate-400");
+    [secs, mins, hrs] = [0, 0, 0];
 })
 
