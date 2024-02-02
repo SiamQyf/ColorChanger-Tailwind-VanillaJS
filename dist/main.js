@@ -25,7 +25,7 @@ btnStart.addEventListener('click', function(){
     if (timer != null){
         clearInterval(timer);
     };   
-    timer = setInterval(stopwatch, 10);
+    timer = setInterval(stopwatch, 1000);
     btnStart.innerHTML = "STARTED";
     btnStop.innerHTML = "PAUSE";
     btnStart.classList.add("focus:bg-slate-400");
